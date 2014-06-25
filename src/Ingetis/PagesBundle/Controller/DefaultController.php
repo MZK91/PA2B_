@@ -31,4 +31,17 @@ class DefaultController extends Controller
 		);
     	return $this->render('IngetisPagesBundle:Default:menu_pages.html.twig', array('categories' => $categories));
     }
+    public function AdminPagesAction($page)
+    {
+    	$em = $this->getDoctrine()
+		->getManager()
+		->getRepository('IngetisPagesBundle:Pages');
+		$pages = $em->findBy(
+		array(),
+		array('idPage' => 'DESC'),
+		20,
+		(20 * ($page-1))
+		);
+        return $this->render('IngetisPagesBundle:Default:admin_pages.html.twig',array('pages' => $pages, 'page' => $page));
+    }
 }

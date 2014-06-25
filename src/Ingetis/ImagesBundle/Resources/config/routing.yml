@@ -1,0 +1,5 @@
+ingetis_admin_images:
+    pattern:  /ad_it/images/{page}
+    defaults: { _controller: IngetisImagesBundle:Default:adminimages, page : 1 }
+    requirements:
+        page: \d*

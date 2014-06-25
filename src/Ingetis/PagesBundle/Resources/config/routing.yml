@@ -1,5 +1,27 @@
-ingetis_page:
+ingetis_pages:
     pattern:  /page/{id}/{slug}
-    defaults: { _controller: IngetisPagesBundle:Default:index }
+    defaults: { _controller: IngetisPagesBundle:Default:page }
     requirements:
         id:  \d+
+
+ingetis_admin_pages:
+    pattern:  /ad_it/pages/{page}
+    defaults: { _controller: IngetisPagesBundle:Default:adminpages, page : 1 }
+    requirements:
+        page: \d*
+
+ingetis_add_pages:
+    pattern:  /ad_it/addpage
+    defaults: { _controller: IngetisPagesBundle:Default:addpage }
+
+ingetis_edit_pages:
+    pattern:  /ad_it/editpage/{id}
+    defaults: { _controller: IngetisPagesBundle:Default:editpage }
+    requirements:
+        id: \d+
+
+ingetis_del_pages:
+    pattern:  /ad_it/delpage/{id}
+    defaults: { _controller: IngetisPagesBundle:Default:delpage }
+    requirements:
+        id: \d+

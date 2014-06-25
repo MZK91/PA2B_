@@ -32,7 +32,8 @@ class AppKernel extends Kernel
             new Ingetis\UserBundle\IngetisUserBundle(),
 
             new FOS\UserBundle\FOSUserBundle(),
-            
+            new Ingetis\ImagesBundle\IngetisImagesBundle(),
+            new Ingetis\DemandeDocBundle\IngetisDemandeDocBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

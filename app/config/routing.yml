@@ -1,3 +1,11 @@
+ingetis_demande_doc:
+    resource: "@IngetisDemandeDocBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ingetis_images:
+    resource: "@IngetisImagesBundle/Resources/config/routing.yml"
+    prefix:   /
+
 ingetis_user:
     resource: "@IngetisUserBundle/Resources/config/routing.yml"
     prefix:   /
