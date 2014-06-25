@@ -34,6 +34,7 @@ class DefaultController extends Controller
 		0
 		);
         return $this->render('IngetisOffresBundle:Default:offres_panel.html.twig',array('offres' => $offres));
+        //test
     }
     public function OffreAction(OffresEmplois $news)
     {
