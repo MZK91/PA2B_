@@ -34,7 +34,6 @@ class DefaultController extends Controller
 		0
 		);
         return $this->render('IngetisOffresBundle:Default:offres_panel.html.twig',array('offres' => $offres));
-        //test
     }
     public function OffreAction(OffresEmplois $news)
     {
@@ -88,7 +87,7 @@ class DefaultController extends Controller
     {	
 		$em = $this->getDoctrine()->getManager();
 
-    	$form = $this->createForm(new OffresEmplois(), $offres); // Création du formulaire
+    	$form = $this->createForm(new OffresEmploisType(), $offres); // Création du formulaire
 
     	$request = $this->getRequest();
     	

@@ -16,7 +16,7 @@ class OffresEmploisType extends AbstractType
     {
         $builder
             ->add('titreOffre')
-            ->add('descriptionOffre')
+            ->add('descriptionOffre','textarea',array('required' => false) )
             //->add('vues')
             //->add('date')
         ;
