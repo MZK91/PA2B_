@@ -1,0 +1,31 @@
+ingetis_news_homepage:
+    pattern:  /news
+    defaults: { _controller: IngetisNewsBundle:Default:index }
+
+ingetis_news:
+    pattern:  /news/{id}/{slug}
+    defaults: { _controller: IngetisNewsBundle:Default:news}
+    requirements:
+        id: \d+
+
+ingetis_admin_news:
+    pattern:  /ad_it/news/{page}
+    defaults: { _controller: IngetisNewsBundle:Default:adminnews, page : 1 }
+    requirements:
+        id: \d*
+
+ingetis_add_news:
+    pattern:  /ad_it/addnews
+    defaults: { _controller: IngetisNewsBundle:Default:addnews }
+
+ingetis_edit_news:
+    pattern:  /ad_it/editnews/{id}
+    defaults: { _controller: IngetisNewsBundle:Default:editnews }
+    requirements:
+        id: \d+
+
+ingetis_del_news:
+    pattern:  /ad_it/delnews/{id}
+    defaults: { _controller: IngetisNewsBundle:Default:delnews }
+    requirements:
+        id: \d+

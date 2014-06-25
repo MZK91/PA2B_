@@ -1,0 +1,26 @@
+{% extends 'IngetisSiteBundle::content.html.twig' %}
+{% block title %}Toutes nos News{% endblock %}
+	{% block blockleft %}
+      <div class="row">
+         <div class="col">
+            <div class="panel panel-default">
+            	<div class="panel-heading">News</div>
+				<div class="panel-body">
+					<ul class="media-list">
+					{% for new in news %}          
+					  {% include('IngetisNewsBundle:Default:media_news_panel.html.twig') %}
+					{% endfor %}
+					</ul>
+				</div>
+			</div>
+         </div>
+      </div>
+	{% endblock %}
+	{% block blockright %}
+      <div class="row">
+         <div class="col"> 
+            {{ render(controller('IngetisPagesBundle:Default:MenuPage')) }}
+         </div>
+      </div>
+	{% endblock %}
+{% block javascripts %}{% endblock %}

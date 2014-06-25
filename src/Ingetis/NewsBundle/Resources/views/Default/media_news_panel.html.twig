@@ -1,0 +1,9 @@
+<li class="media">
+	<a class="pull-left" href="{{ path('ingetis_news' , { 'id' : new.idActualite , 'slug' : 'article' }) }}">
+		<img class="media-object" src="{{ new.photoActualite }}" alt="" class="" height="86" width="134" />
+	</a>
+	<div class="media-body">
+		<h4 class="media-heading"><a href="{{ path('ingetis_news' , { 'id' : new.idActualite , 'slug' : 'article' }) }}">{{ new.titreActualite }}</a></h4>
+		<p>{{ new.texteActualite[:150] }}</p>
+	</div>
+</li>

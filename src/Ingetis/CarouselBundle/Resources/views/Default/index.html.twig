@@ -1,0 +1,31 @@
+<div id="carousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+  {% set i = 0 %}
+  {% for slide in slides %}
+      <li data-target="carousel" data-slide-to="{{ loop.index }}" class="active"><a href="#"></a></li>
+  {% endfor %}
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+  {% set i = 0 %}
+    {% for slide in slides %}            
+      <div class="item{% if i == 0 %} active {% set i = 1 %}{% endif %}">
+      <img src="http://ingetis.com/images/panell/{{ slide.imagePanell }}">
+      <div class="carousel-caption">
+          <h3>{{ slide.titrePanell }}</h3>
+          <p>---</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>

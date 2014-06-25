@@ -1,0 +1,7 @@
+parameters:
+#    ingetis_div_index.example.class: Ingetis\DivIndexBundle\Example
+
+services:
+#    ingetis_div_index.example:
+#        class: %ingetis_div_index.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

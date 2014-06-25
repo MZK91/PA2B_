@@ -1,0 +1,82 @@
+{% extends 'IngetisSiteBundle::content.html.twig' %}
+{% block title %}Ingetis{% endblock %}
+	{% block blockleft %}
+      <div class="row">
+         <div class="col">
+            {{ render(controller('IngetisCarouselBundle:Default:index')) }}
+         </div>
+      </div>
+      <div class="row">
+         <div class="col">   
+             {{ render(controller('IngetisNewsBundle:Default:listindex')) }}
+         </div>
+      </div>
+      <div class="row">
+         <div class="col">   
+            {{ render(controller('IngetisOffresBundle:Default:listindex')) }}
+         </div>
+      </div>
+      <div class="row">
+         <div class="col">   
+            {{ render(controller('IngetisAnnonceIndexBundle:Default:index')) }}
+         </div>
+      </div>
+	{% endblock %}
+	{% block blockright %}
+      <div class="row">
+         <div class="col">
+            <div class="panel panel-default" id="candidature">
+               <div class="panel-body" >
+                  <h2>
+                     <a href="">Déposez votre candidature</a>
+                  </h2>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col"> 
+            <div id="VousEtes" class="panel panel-default">
+               <div class="panel-body">
+                  <h2 class="icon">Ingetis si vous êtes</h2>
+                  <ul class="nav nav-pills nav-stacked">        
+                        <li><a href="">Candidat</a></li>
+                        <li><a href="">Étudiant</a></li>
+                        <li><a href="">Professionnel</a></li>
+                        <li><a href="">Enseignant</a></li>
+                        <li><a href="">Ancien élève</a></li>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col"> 
+            <div class="panel panel-default" id="Raisons">
+               <div class="panel-body">
+                  <h2 class="icon">
+                     <a href="">Les raisons de choisir Ingetis</a>
+                  </h2>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col"> 
+            {{ render(controller('IngetisPagesBundle:Default:MenuPage')) }}
+         </div>
+      </div>
+      <div class="row">
+         <div class="col">
+            {{ include('IngetisSiteBundle::candidature.html.twig') }}
+         </div>
+      </div>
+      <div class="row">
+         <div class="col">
+            {{ include('IngetisSiteBundle::offre_stage.html.twig') }}
+         </div>
+      </div>
+	{% endblock %}
+{% block javascripts %}{% endblock %}
+

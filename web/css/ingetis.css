@@ -1,0 +1,151 @@
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Maven Pro', sans-serif; color:#353535; -webkit-font-smoothing: antialiased; font-style: inherit;font-weight: inherit;
+}
+.navbar{
+  border-radius: 0px; box-shadow:0px; background: #2354A5 url('http://ingetis.com/images/site/shadow_line.png') top center repeat-x;
+  border-bottom: 1px solid #FFF; min-height: 40px; margin-bottom: 0px;
+}
+.container {
+    padding: 0px;
+}
+@media (max-width: 768px) {
+  #header{
+    display: none;
+  }
+  iframe{
+    width: 100%;
+  }
+}
+@media (min-width: 992px){
+  .container {
+    width: 990px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px){
+  .container {
+    width: 100%;
+  }
+}
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+#header h2{
+color: #2354A5; font-size: 23px; line-height: 28px; text-align: right
+}
+.navbar-default .navbar-nav>li>a,footer,footer a{
+  color: #FFF
+}
+.navbar-nav>li>a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+footer{
+background: #2354a5 url('http://ingetis.com/images/site/footer_light.png') top center no-repeat; border-top: 1px solid #FFF;
+}
+footer li {
+  list-style: none; line-height: 25px;
+}
+#wrapper-footer{
+background: none url('http://ingetis.com/images/site/shadow_line.png') top center repeat-x;
+}
+#footer{
+  padding-top: 10px;
+}
+#footer-copyright{
+margin-top: 10px;
+color: #FFFFFF;
+text-align: center;
+background-image: url("http://ingetis.com/images/site/opacity.png");
+color: #FFFFFF;
+padding: 35px 0;
+text-align: center;
+}
+#footer-copyright a,#footer h2{
+color: #FFFFFF;
+}
+#carousel{
+-moz-box-shadow: 0px 0px 15px #BBB;
+-webkit-box-shadow: 0px 0px 15px #BBB;
+box-shadow: 0px 0px 15px #BBB;
+}
+.icon-img {
+background-position: 0 0;
+}
+.icon-img:hover {
+background-position: 0 -26px;
+}
+.carousel-control.right,.carousel-control.left{
+ background: none;
+}
+#content{
+background: #E3E3E3; padding-top: 10px;
+padding-bottom: 10px;
+}
+.panel{
+-moz-box-shadow: 0px 0px 15px #BBB;
+-webkit-box-shadow: 0px 0px 15px #BBB;
+box-shadow: 0px 0px 15px #BBB;
+border-radius: 2px;
+}
+.carousel,.panel{
+  margin-bottom: 20px;
+}
+.panel-default .panel-heading {
+  border-radius: 0px;
+  margin: 5px 5px 0px 5px;
+  font-size: 28px;
+  line-height: 30px;
+  padding: 3px 5px;
+  color: #FFF;
+  background: #396baf;
+  box-shadow: 0;
+}
+.panel-body .media-heading{
+text-transform: uppercase;
+font-size: 20px;
+line-height: 24px; border: none;
+}
+#content .row{ margin: 0;}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+padding-left: 10px;
+padding-right: 10px;
+}
+#VousEtes ul{
+ margin-left: 15px; 
+}
+#VousEtes li{
+background: url("http://ingetis.com/images/site/arrow.png") no-repeat left;
+border-bottom: 1px dotted #ebebeb;
+}
+#MenuPages li{
+background: url("http://ingetis.com/images/site/list-style.png") no-repeat left;
+padding-left: 30px; text-transform:uppercase; margin-bottom: 10px;
+}
+#VousEtes .icon{
+background: url("http://cdn1.iconfinder.com/data/icons/dellipack/48/people.png") no-repeat left;
+padding-left: 60px; line-height: 40px
+}
+#Raisons .icon {
+background: url("http://cdn1.iconfinder.com/data/icons/customicondesignoffice2/PNG/FAQ.png") no-repeat left;
+padding-left: 60px;
+line-height: 40px;
+}
+#candidature{
+background-color: #2354A5; text-align: center; 
+}
+#candidature a{
+  color:#FFF; font-size: 18px;
+}
+h2{
+color: #396baf;
+font-weight: bold;
+font-size: 23px; margin: 0px;
+}
+.boutons-cand-off img{
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,7 @@
+parameters:
+#    ingetis_user.example.class: Ingetis\UserBundle\Example
+
+services:
+#    ingetis_user.example:
+#        class: %ingetis_user.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,5 @@
+ingetis_page:
+    pattern:  /page/{id}/{slug}
+    defaults: { _controller: IngetisPagesBundle:Default:index }
+    requirements:
+        id:  \d+

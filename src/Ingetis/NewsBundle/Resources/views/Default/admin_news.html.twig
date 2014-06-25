@@ -1,0 +1,49 @@
+{% extends 'IngetisSiteBundle::admin_content.html.twig' %}
+{% block titreSection %}News{% endblock %}
+{% block titrePage %}Administration des News{% endblock %}
+{% block Section %}News{% endblock %}
+{% block SousSection %}News{% endblock %}
+{% block content %}
+<table cellpadding="0" cellspacing="0" border="0" class="display table" id="tableau"> 
+    <thead> 
+        <tr> 
+            <th>id</th> 
+            <th>Edit.</th> 
+            <th>Sup.</th> 
+            <th>Img</th> 
+            <th>Titre</th>
+            <th>Vues</th> 
+        </tr> 
+    </thead> 
+    <tbody>
+    {% for actu in news %} 
+        <tr class="gradeX"> 
+            <td>{{ actu.idActualite }}</td> 
+            <td><a href="{{ path('ingetis_edit_news',{'id':actu.idActualite}) }}"><span class="glyphicon glyphicon-pencil"></span></a></td> 
+            <td><a href="{{ path('ingetis_del_news',{'id':actu.idActualite},{'page':page} ) }}"><span class="glyphicon glyphicon-trash"></span></a></td> 
+            <td><img src="{{ actu.photoActualite }}" height="50" width="70" /></td> 
+            <td><a href="{{ path('ingetis_news' , { 'id' : actu.idActualite , 'slug' : 'article' }) }}">{{ actu.titreActualite }}</a></td>
+            <td>{{ actu.vuesActualite }}</td> 
+        </tr>
+    {% endfor %}
+    </tbody>
+    <tfoot> 
+        <tr> 
+            <th>id</th> 
+            <th>Edit.</th> 
+            <th>Sup.</th> 
+            <th>Img</th> 
+            <th>Titre</th>
+            <th>Vues</th> 
+        </tr> 
+    </tfoot> 
+</table>
+{% endblock %}
+{% block javascript %}
+<script src="{{ asset('js/plugins/datatables/dataTables.bootstrap.js') }}" type="text/javascript"></script>
+<script src="{{ asset('js/plugins/datatables/jquery.dataTables.js') }}" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#tableau').dataTable();
+} );</script>
+{% endblock %}

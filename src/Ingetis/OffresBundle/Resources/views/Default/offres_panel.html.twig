@@ -1,0 +1,27 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+		Nos Offres d'Emploi en Alternance
+	</div>
+	<div class="panel-body">
+		<ul class="media-list">
+			{% for offre in offres %}          
+				<li class="media">
+					<div class="media-body">
+					  <h4 class="media-heading">{{ offre.titreOffre }}</h4>
+					  <p>{{ offre.descriptionOffre[:150]|striptags }}</p>
+					  <div>
+						<a class="pull-right" href="">
+							<small class="entry-title">lire la suite...</small>
+						</a>
+					  </div>
+					</div>
+				</li>
+			{% endfor %}
+		</ul>
+		<h3>
+			<a class="pull-right" href="">
+				+ Voir toutes nos offres ...
+			</a>
+		</h3>
+	</div>
+</div>

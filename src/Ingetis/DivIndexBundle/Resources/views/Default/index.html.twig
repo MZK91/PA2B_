@@ -1,0 +1,19 @@
+{% for div in divsindex %}
+	{% if (loop.index == 0) or (loop.index == 2) %}
+		<div class="row">
+	{% endif %}
+		<div class="col-md-6"> 
+			<div class="media">
+				<a class="pull-left" href="{{ div.lienDivAccueil }}">
+					<img class="media-object" src="{{ div.imgDivAccueil }}" alt="" />
+				</a>
+				<div class="media-body">
+				 	<h4 class="media-heading">{{ div.titreDivAccueil }}</h4>
+				 	<p>{{ div.texteDivAccueil | raw }}</p>
+				</div>
+			</div>
+		</div>
+	{% if (loop.index == 0) or (loop.index == 2) %}
+		</div>
+	{% endif %}
+{% endfor %}

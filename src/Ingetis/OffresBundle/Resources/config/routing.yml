@@ -1,0 +1,31 @@
+ingetis_offres_homepage:
+    pattern:  /offres
+    defaults: { _controller: IngetisOffresBundle:Default:index }
+
+ingetis_offres:
+    pattern:  /offre/{id}/{slug}
+    defaults: { _controller: IngetisOffresBundle:Default:offre }
+    requirements:
+        id: \d+
+
+ingetis_admin_offres:
+    pattern:  /ad_it/offres/{page}
+    defaults: { _controller: IngetisOffresBundle:Default:adminoffres, page : 1 }
+    requirements:
+        id: \d*
+
+ingetis_add_offres:
+    pattern:  /ad_it/addoffre
+    defaults: { _controller: IngetisOffresBundle:Default:addoffre }
+
+ingetis_edit_offres:
+    pattern:  /ad_it/editoffre/{id}
+    defaults: { _controller: IngetisOffresBundle:Default:editoffre }
+    requirements:
+        id: \d+
+
+ingetis_del_offres:
+    pattern:  /ad_it/deloffre/{id}
+    defaults: { _controller: IngetisOffresBundle:Default:deloffre }
+    requirements:
+        id: \d+

@@ -1,0 +1,15 @@
+<div class="panel panel-default">
+	<div class="panel-heading">News</div>
+	<div class="panel-body">
+		<ul class="media-list">
+			{% for new in news %}          
+				{% include('IngetisNewsBundle:Default:media_news_panel.html.twig') %}
+			{% endfor %}
+		</ul>
+		<h3>
+			<a class="pull-right" href="{{ path('ingetis_news_homepage') }}">
+				+ Voir toutes nos news ...
+			</a>
+		</h3>
+	</div>
+</div>
