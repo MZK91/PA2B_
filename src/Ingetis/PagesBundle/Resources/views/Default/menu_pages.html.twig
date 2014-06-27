@@ -1,10 +1,15 @@
 <div id="MenuPages" class="panel panel-default">
 	<div class="panel-body">          
 		<ul class="nav nav-pills nav-stacked">
-			{% for categorie in categories %}          
-				<li>	
-					<h2><a href="">{{ categorie.titreCategorie }}</a></h2>
-				</li>
+			{% for categorie in categories %}        
+				<li class="menu_cat"><h2>{{ categorie.titreCategorie }}</h2></li>
+					{% if categorie.pages != NULL %}
+					<ul class="menu_ct_cat">
+						{% for page in categorie.pages %}
+						<li><a href="{{ path('ingetis_pages',{ 'id': page.idPage , 'slug': 'test' }) }}">{{ page.titrePage }}</a></li>
+						{% endfor %}
+					</ul>
+					{% endif %}
 			{% endfor %}
 		</ul>
 	</div>

@@ -21,7 +21,7 @@ security:
                 csrf_provider:  form.csrf_provider
                 login_path:     fos_user_security_login
                 use_forward:    true
-                default_target_path: /ad_it/addnews
+                default_target_path: /ad_it/news
             remember_me:
                 key: %secret%
                 lifetime: 300000000

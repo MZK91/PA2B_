@@ -42,6 +42,11 @@ class Categories
      */
     private $position;
 
+    /**
+     *
+     * @ORM\OneToMany(targetEntity="Ingetis\PagesBundle\Entity\Pages",mappedBy="idCategorie")
+     */
+    private $pages;
 
 
     /**
@@ -52,6 +57,10 @@ class Categories
     public function getIdCategorie()
     {
         return $this->idCategorie;
+    }
+     public function getPages()
+    {
+        return $this->pages;
     }
 
     /**

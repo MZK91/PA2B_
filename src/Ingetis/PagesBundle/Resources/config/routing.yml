@@ -25,3 +25,7 @@ ingetis_del_pages:
     defaults: { _controller: IngetisPagesBundle:Default:delpage }
     requirements:
         id: \d+
+
+ingetis_menu_pages:
+    pattern:  /menu
+    defaults: { _controller: IngetisPagesBundle:Default:menupage }

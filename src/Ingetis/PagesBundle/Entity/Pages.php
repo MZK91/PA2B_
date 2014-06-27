@@ -87,7 +87,8 @@ class Pages
     /**
      * @var integer
      *
-     * @ORM\Column(name="id_categorie", type="integer", nullable=false)
+     * @ORM\ManyToOne(targetEntity="Ingetis\PagesBundle\Entity\Categories",inversedBy="idCategorie")
+     * @ORM\JoinColumn(name="id_categorie",referencedColumnName="id_categorie", nullable=true)
      */
     private $idCategorie;
 

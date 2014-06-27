@@ -1,0 +1,34 @@
+{% extends 'IngetisSiteBundle::content.html.twig' %}
+{% block title %}{{ page.titrePage }}{% endblock %}
+	{% block blockleft %}
+      <div class="row">
+         <div class="col">
+            <div class="panel panel-default">
+				<div class="panel-body">
+					<h1>{{ page.titrePage }}</h1>
+        			<div id="texte">
+        				{{ page.textePage | raw }}
+        			</div>
+				</div>
+			</div>
+         </div>
+      </div>
+	{% endblock %}
+	{% block blockright %}
+      <div class="row">
+         <div class="col"> 
+            {{ render(controller('IngetisPagesBundle:Default:MenuPage')) }}
+         </div>
+      </div>
+      <div class="row">
+         <div class="col">
+            {{ include('IngetisSiteBundle::candidature.html.twig') }}
+         </div>
+      </div>
+      <div class="row">
+         <div class="col">
+            {{ include('IngetisSiteBundle::offre_stage.html.twig') }}
+         </div>
+      </div>
+	{% endblock %}
+{% block javascripts %}{% endblock %}
