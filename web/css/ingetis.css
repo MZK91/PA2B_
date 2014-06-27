@@ -145,15 +145,21 @@ font-size: 23px; margin: 0px;
     margin-left: auto;
     margin-right: auto;
 }
+#MenuPages ul {
+  text-align: left; 
+}
 .menu_cat {
 cursor: pointer;
 margin-bottom: 5px;
 list-style: url("http://ingetis.com/images/site/list-style.png");
-margin-left: 35px;
+margin-left: 35px; margin: 0px; padding-left: 0px;
 }
 .menu_ct_cat{
   display: none;
   color: #999999;
   list-style-image: url("http://ingetis.com/images/site/arrow.png");
-  padding-top: 3px;
+  padding-top: 3px; font-size: 13px; padding-left: 0px; margin-bottom:10px;
+}
+.menu_ct_cat a{
+color: #0d2c4e; text-decoration: none
 }
